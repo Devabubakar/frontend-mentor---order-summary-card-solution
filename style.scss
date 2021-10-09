@@ -1,0 +1,21 @@
+:root{
+   //custom variables
+   //1.layout
+   --mobile:375px;
+   --desktop:1440px;
+
+   //2.colors
+   --primary_main:hsl(225, 100%, 94%)
+   --primary_off:hsl(245, 75%, 52%)
+
+   --neutral_very: hsl(225, 100%, 98%)
+   --neutral_desaturated:hsl(224, 23%, 55%)
+   --neutral_dark:hsl(223, 47%, 23%)
+
+   //3.Typography
+   --font_size:16px;
+   --family:'Red Hat Display';
+   --font_small:500
+   --font_normal:700
+   --font_big:900
+}
