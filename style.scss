@@ -34,39 +34,41 @@ body {
   background-size: cover;
   height: 100vh;
   background-color: var(--primary_main);
-  line-height: 3;
-  overflow: hidden;
+  
+  
   font-family: 'Red Hat Display';
   color: var(--neutral_dark);
   font-weight: var(--font_normal);
 }
 
 .card {
-  margin: 8vh  auto;
+  margin: 50px auto;
+  overflow: hidden;
   text-align: center;
   background-color: white;
-  width: 300px;
-  margin-bottom: 2vh;
-  border-radius: 25px;
+  width: 330px;
+  height: 600px;
+  border-radius: 16px;
   box-shadow: 0 18px 10px rgba(145, 145, 145, 30%);
 
   h1 {
     font-weight: var(--font_big);
-    font-size: 20px;
-    line-height: 1;
+    font-size: 2em;
+    padding: 12px;
+    
   }
-  p {
-    width: 90%;
-    margin: 0 auto;
+  .card-content {
+    width: 80%;
+    margin: 20px auto;
     color: var(--neutral_desaturated);
     font-size: 14px;
     font-weight: var(--font_small);
-    line-height: 2.5;
+    
   }
   button {
     padding: 15px 60px;
+    margin: 3vh 0;
     border-radius: 12px;
-    margin: 2vh 0;
     background-color: var(--primary_off);
     color: white;
     border: none;
@@ -96,17 +98,15 @@ body {
 }
 
 .plan-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  line-height: 16px;
-  margin: 2vh 3vw;
-  padding: 2% 0;
-  background-color: var(--neutral_very);
+  width: 80%;
+  background-color: var(--primary_main);
   border-radius: 25px;
+  margin: 1vh auto;
+  height: 80px;
+  overflow: hidden;
 
   img {
     display: block;
@@ -123,12 +123,18 @@ body {
       opacity: 1;
       
     }
+    
+  }
+
+  .item p{
+    line-height: 1px;
+    color: var(--neutral_desaturated);
   }
 }
 
 .hero-image {
-  width: 300px;
-  border-radius: 25px 25px 0 0;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
 }
 
 
@@ -142,11 +148,13 @@ body {
   }
 
   .card{
-    width: 350px;
-    margin: 9vh auto;
+    width: 390px;
+    height: 650px;
+    margin: 100px auto;
+    
 
     .hero-image{
-      width: 350px;
+      width: 100%;
     }
   }
 }
